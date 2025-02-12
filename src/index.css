@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-primary: #f97316;
+  --color-primaryDark: #e86f00;
+  --color-lightOrange: #f1dabf;
+  --color-darkGray: #1a1f25;
+  --color-lightGray: #272c35;
+}
+
+@utility container {
+  text-align: center;
+  /* center : true; */
+  padding : 20px;
+}
+
+@utility img-shadow {
+    filter: drop-shadow(40px 50px 25px #0f1115);
+}
+
+@utility img-shadow2 {
+      filter: drop-shadow(10px 30px 15px #3030307a);
+}
+

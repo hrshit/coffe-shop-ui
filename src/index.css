@@ -14,11 +14,6 @@
   --color-lightGray: #272c35;
 }
 
-@utility container {
-  text-align: center;
-  /* center : true; */
-  padding : 20px;
-}
 
 @utility img-shadow {
     filter: drop-shadow(40px 50px 25px #0f1115);
@@ -26,5 +21,15 @@
 
 @utility img-shadow2 {
       filter: drop-shadow(10px 30px 15px #3030307a);
+}
+
+@utility input-style {
+     padding: 8px 16px; /* px-4 (16px) and py-2 (8px) */
+  border: 1px solid #9ca3af; /* border-grey-400 (#9CA3AF in Tailwind) */
+  border-radius: 6px;
+}
+
+@utility primary-btn {
+  @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryDark duration-200
 }
 

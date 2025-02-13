@@ -1,10 +1,10 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({ sidebar, setSidebar }) => {
   return (
     <nav className="absolute top-0 left-0 w-full pt-10 text-white z-40">
-      <div className="px-10">
+      <div className="px-4 lg:px-48">
         <div className="flex justify-between items-center">
           {/* logo section   */}
           <motion.h1
@@ -18,7 +18,8 @@ const Navbar = () => {
             }}
             className="text-2xl font-semibold uppercase"
           >
-            Coders <span className="text-primary">Coffe</span>
+            <span className="text-primary">Coders </span>
+            Coffee
           </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: -100 }}
@@ -29,6 +30,7 @@ const Navbar = () => {
               damping: 10,
               delay: 0.2,
             }}
+            onClick={() => setSidebar(!sidebar)}
           >
             <GiHamburgerMenu className="text-3xl cursor-pointer" />
           </motion.div>
@@ -36,6 +38,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar

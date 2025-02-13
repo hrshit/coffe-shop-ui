@@ -1,10 +1,15 @@
-import React from 'react'
 import Hero from './Components/Hero/Hero'
+import Service from './Components/Service/Service'
+import WhereToBuy from './Components/WhereToBuy/WhereToBuy'
+import AppBanner from './Components/AppBanner/AppBanner'
 
 const App = () => {
   return (
     <div className='overflow-x-hidden'>
-        <Hero/>
+      <Hero />
+      <Service />
+      <WhereToBuy />
+      <AppBanner/>
     </div>
   )
 }

@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <main style={bgImage}>
       <section className="reltive min-h-[750px] w-full ">
-        <div className="relative text-center w-full px-4 md:px-6 lg:px-36 mx-auto">
+        <div className="container">
           {/* Navbar section */}
           <Navbar sidebar={sidebar} setSidebar={setSidebar} />
           {/* Hero Section */}
@@ -119,18 +119,18 @@ const Hero = () => {
                   damping: 10,
                   delay: 1.2,
                 }}
-                className="text-lightOrange mt-[100px] md:mt-0 p-4 space-y-28 text-left"
+                className="text-lightOrange mt-[100px] md:mt-28 p-4 space-y-28 text-left"
               >
                 <h1 className="text-7xl font-bold leading-tight ml-14"></h1>
-                <div className="">
+                <div className="relative">
                   <div className="relative z-10 space-y-4 ml-10">
-                    <h1 className="text-2xl">Black Tumbler</h1>
+                    <h1 className="text-2xl">Blvck Tumbler</h1>
                     <h1 className="text-sm opacity-55 leading-loose">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Labore ex praesentium facilis illum quas incidunt qui
                     </h1>
                   </div>
-                  <div className="absolute -top-8 -right-15 w-[250px] h-[190px] bg-darkGray/50"></div>
+                  <div className="absolute -right-10 -top-2 w-[250px] h-[190px] bg-darkGray/50"></div>
                 </div>
               </motion.div>
             </div>

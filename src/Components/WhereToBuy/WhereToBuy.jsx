@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const WhereToBuy = () => {
   return (
-    <div className="relative text-center w-full px-4 md:px-6 lg:px-36 mx-auto my-36">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 place-items-center">
+    <div className="container  my-36">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 mx-auto">
         {/* Form Section */}
         <div className="space-y-6">
           <motion.h1
@@ -71,13 +71,13 @@ const WhereToBuy = () => {
         {/* WorldMap Section */}
         <div className="col-span-2">
           <motion.img
-            initial={{ opacity: 0, scale: .5 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
               stiffness: 100,
               damping: 10,
-              delay: 1
+              delay: 1,
             }}
             src={WorldMap}
             alt=""

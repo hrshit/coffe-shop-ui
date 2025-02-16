@@ -1,17 +1,19 @@
-import Hero from './Components/Hero/Hero'
-import Service from './Components/Service/Service'
-import WhereToBuy from './Components/WhereToBuy/WhereToBuy'
-import AppBanner from './Components/AppBanner/AppBanner'
+import Hero from "./Components/Hero/Hero";
+import Service from "./Components/Service/Service";
+import WhereToBuy from "./Components/WhereToBuy/WhereToBuy";
+import AppBanner from "./Components/AppBanner/AppBanner";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className="">
       <Hero />
       <Service />
       <WhereToBuy />
-      <AppBanner/>
+      <AppBanner />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

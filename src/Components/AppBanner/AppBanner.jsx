@@ -1,5 +1,5 @@
 // import React from 'react'
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 
 import bannerImg from "../../assets/coffee-cover.jpg";
 import AppStoreImg from "../../assets/app-store.png";
@@ -16,16 +16,16 @@ const BannerStyle = {
 };
 const AppBanner = () => {
   return (
-    <div className="relative text-center w-full px-4 md:px-6 lg:px-36 mx-auto my-14">
+    <div className="container my-14">
       <div
         style={BannerStyle}
         className="sm:min-h-[400px] sm:flex sm:justify-end sm:items:center rounded-xl"
       >
-        <div className="">
-          <div className="space-y-6 max-w-xl mx-auto my-4">
+        <div className="place-content-center">
+          <div className="space-y-6 max-w-xl mx-auto ">
             <motion.h1
               initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              whileInView={{ opacity: 1, y: 1 }}
               transition={{
                 delay: 0.2,
                 type: "spring",
